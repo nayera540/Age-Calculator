@@ -1,0 +1,159 @@
+body {
+    background-color: #eeeeeeff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #8f95ecff;
+    font-size: 48px;
+    /* Adjust the font size as needed */
+    text-shadow:
+        2px 2px 8px rgba(93, 101, 191, 0.5),
+        /* Starting color: #5d65bfff */
+        4px 4px 1px rgba(35, 37, 101, 0.5);
+    /* Ending color: #232565ff */
+}
+
+
+.form_container {
+    width: 400px;
+    display: block;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fefeffff;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+form {
+    background-color: #3844b5ff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    color: #fefeffff;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.form_elements {
+    display: flex;
+    flex-direction: row;
+    /* This sets the direction to horizontal */
+    justify-content: space-between;
+    /* This evenly spaces the elements */
+}
+
+/* You may also want to add some styling to individual input elements, e.g., margins, widths, or padding */
+.date,
+.month,
+.year {
+    margin-right: 5px;
+    /* Add some spacing between the input elements */
+    flex: 2;
+    /* Allow each input element to grow and occupy equal space */
+}
+
+.title {
+    display: block;
+    /* Set labels to display on separate lines */
+    text-align: center;
+}
+
+.date input,
+.month input,
+.year input {
+    display: block;
+    /* Set input elements to display on separate lines */
+    width: 47px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.date input::placeholder,
+.month input::placeholder,
+.year input::placeholder {
+    text-align: center;
+    /* Center-align the placeholder text horizontally */
+    line-height: inherit;
+    /* Center-align the placeholder text vertically */
+}
+
+form .button {
+    width: 300px;
+    background-color: #fefeffff;
+    border: none;
+    margin-left: 29px;
+    height: 26px;
+    border-radius: 4px;
+
+}
+
+.button {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    padding: 1px;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 19px;
+    margin-top: 40px;
+}
+
+.years,
+.month,
+.days {
+    margin-right: 10px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* Arrange content vertically */
+    align-items: center;
+    /* Center-align items horizontally */
+}
+
+
+.card {
+    width: 90px;
+    height: 110px;
+    background-color: #3844b5ff;
+    border-radius: 5px;
+    text-align: center;
+    color: #fefeffff;
+    align-items: center;
+}
+#years-card, #months-card, #days-card{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text content */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.years_card {
+    background-color: #6770dbff;
+    align-items: center;
+}
+
+
+
+.month_card {
+    background-color: #cfd498ff;
+}
+
+.days_card {
+    background-color: #72e3b5ff;
+}

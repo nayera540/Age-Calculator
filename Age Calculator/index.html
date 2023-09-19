@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Open+Sans:wght@300&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Open+Sans:wght@300&family=Orbitron:wght@700&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Open+Sans:wght@300&family=Orbitron:wght@700&family=Poppins:wght@100;200;500&display=swap"
+        rel="stylesheet">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h3>Age Calculator</h3>
+        </center>
+        <div class="form_container">
+            <form>
+                <div class="form_elements">
+                    <div class="date">
+                        <label for="date" class="title">Date</label>
+                        <input id="date" type="text" required placeholder="dd" maxlength="2" minlength="1">
+                    </div>
+                    <div class="month">
+                        <label for="month" class="title">Month</label>
+                        <input id="month" type="text" required placeholder="mm" maxlength="2" minlength="1">
+                    </div>
+                    <div class="year">
+                        <label for="year" class="title">Year</label>
+                        <input id="year" type="text" required placeholder="yyyy" maxlength="4" minlength="4">
+                    </div>
+                </div>
+                <input type="submit" class="button" onclick="age(event)"></input>
+            </form>
+            <div class="result">
+                <div class="years">
+                    <div class="card years_card" id="years-card"></div>
+                    <p>Years</p>
+                </div>
+                <div class="month">
+                    <div class="card month_card" id="months-card"></div>
+                    <p>Month</p>
+                </div>
+                <div class="days">
+                    <div class="card days_card" id="days-card"></div>
+                    <p>Days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="age-script.js"></script>
+</body>
+
+</html>
